@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #e3f398;
+            background: linear-gradient(to right, #ADD8E6, #1E90FF);
         }
 
         .container {
@@ -24,7 +25,8 @@
             width: 200%;
         }
 
-        input, button {
+        input,
+        button {
             margin-bottom: 10px;
             width: 100%;
             padding: 10px;
@@ -35,9 +37,9 @@
         }
 
         button {
-            background-color:rgb(243, 91, 40);
+            background-color: rgb(243, 91, 40);
             color: white;
-            border:rgb(245, 162, 237);
+            border: rgb(245, 162, 237);
             cursor: pointer;
             font-size: 16px;
             padding: 12px 24px;
@@ -48,14 +50,17 @@
         button:hover {
             background-color: #2ce34e;
         }
-        input:hover{
+
+        input:hover {
             background-color: #e5acac;
         }
-        .main{
+
+        .main {
             color: aliceblue;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2 class="main">Login Form</h2>
@@ -64,17 +69,17 @@
             <input type="password" id="password" placeholder="Password" required>
             <input type="tel" id="phoneNum" placeholder="Phone Number" required>
             <input type="date" id="dob" required>
-            
-            
+
+
             <button>
                 <a href="thank.html" target="_blank">LOGIN</a>
             </button>
-            
+
         </form>
     </div>
 
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
             event.preventDefault();
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
@@ -89,4 +94,5 @@
         });
     </script>
 </body>
+
 </html>
